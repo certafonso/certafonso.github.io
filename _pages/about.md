@@ -6,7 +6,6 @@ redirect_from:
   - /about.html
 ---
 
-# Afonso Certo
 *Ph.D. Student in Electrical and Computer Engineering*  
 Instituto Superior Técnico, Lisbon, Portugal
 
