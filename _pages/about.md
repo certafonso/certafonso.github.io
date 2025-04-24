@@ -1,11 +1,13 @@
 ---
 permalink: /
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+# Afonso Certo
 *Ph.D. Student in Electrical and Computer Engineering*  
 Instituto Superior Técnico, Lisbon, Portugal
 
