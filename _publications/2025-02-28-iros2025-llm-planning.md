@@ -7,8 +7,8 @@ excerpt: 'One of the primary challenges in building a General Purpose Service Ro
 date: 2025-02-28
 venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)'
 paperurl: 'https://afonsocerto.com/files/iros2025_llm_robot_planning.pdf'
-citation: 'Afonso Certo, Bruno Martins, Carlos Azevedo, Pedro U. Lima. "Large Language Model-Based Robot Task Planning from Voice Command Transcriptions." Under review for <i>IROS 2025</i>, submitted February 2025.'
+citation: 'Afonso Certo, Bruno Martins, Carlos Azevedo, Pedro U. Lima. "Large Language Model-Based Robot Task Planning from Voice Command Transcriptions." Accepted for <i>IROS 2025</i>.'
 ---
 One of the primary challenges in building a General Purpose Service Robot (GPSR), a robot capable of executing generic human commands, lies in understanding natural language instructions. These instructions often contain speech recognition errors and incomplete information, complicating the extraction of clear goals and the formulation of an efficient and effective action plan. This work presents an end-to-end pipeline that leverages a Large Language Model to directly translate instruction transcripts into coherent action plans. Furthermore, the pipeline integrates environmental context into the model’s input, allowing for the generation of more efficient and context-aware plans. The system’s performance was evaluated using a simulator based on Generalized Stochastic Petri Nets, achieving a success rate of around 55% on the ALFRED dataset, even in unseen environments. The entire pipeline was also successfully deployed at RoboCup 2024 in Eindhoven, where it secured second place in the GPSR task. The code, dataset and models are available at [here](https://github.com/socrob/llm_gpsr).
 
-The paper is currently under review for IROS 2025. You can [download the PDF here](https://afonsocerto.com/files/iros2025_llm_robot_planning.pdf).
+This paper was accepted for IROS 2025. You can [download the PDF here](https://afonsocerto.com/files/iros2025_llm_robot_planning.pdf).
