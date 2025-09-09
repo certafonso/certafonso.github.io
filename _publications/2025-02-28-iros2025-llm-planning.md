@@ -1,7 +1,7 @@
 ---
 title: "Large Language Model-Based Robot Task Planning from Voice Command Transcriptions"
 collection: publications
-category: under_review
+category: conferences
 permalink: /publication/2025-02-28-iros2025-llm-planning
 excerpt: 'One of the primary challenges in building a General Purpose Service Robot (GPSR), a robot capable of executing generic human commands, lies in understanding natural language instructions. These instructions often contain speech recognition errors and incomplete information, complicating the extraction of clear goals and the formulation of an efficient and effective action plan. This work presents an end-to-end pipeline that leverages a Large Language Model to directly translate instruction transcripts into coherent action plans. Furthermore, the pipeline integrates environmental context into the model’s input, allowing for the generation of more efficient and context-aware plans. The system’s performance was evaluated using a simulator based on Generalized Stochastic Petri Nets, achieving a success rate of around 55% on the ALFRED dataset, even in unseen environments. The entire pipeline was also successfully deployed at RoboCup 2024 in Eindhoven, where it secured second place in the GPSR task. The code, dataset and models are available at https://github.com/socrob/llm_gpsr. '
 date: 2025-02-28
