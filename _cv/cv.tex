@@ -1,0 +1,60 @@
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+\usepackage{settings}
+
+\DefineBibliographyStrings{english}{url={\textsc{url}}}
+
+\addbibresource{own-bib.bib}
+
+%% Bold author name in bibliography
+\mynames{
+  Certo/Afonso}
+
+\ifxetexorluatex
+  \usepackage{fontspec} 
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+% Tell LaTeX where to look for images regardless of execution directory
+\graphicspath { {images/}{../images/} }
+
+\leftheader{
+  {\LARGE\bfseries\sffamily Afonso Bispo Certo, Ph.D. Student}
+
+  \makefield{\faEnvelope[regular]}{\href{mailto:afonso.certo@tecnico.ulisboa.pt}{\texttt{ afonso.certo@tecnico.ulisboa.pt }}}
+  \makefield{\faGraduationCap}{\href{ https://scholar.google.com/citations?user=VyRNn74AAAAJ }{\texttt{Google Scholar}}}
+  \makefield{\faOrcid}{\href{ http://orcid.org/0009-0002-5599-6266 }{\texttt{ ORCID }}}
+  \makefield{\faGithub}{\href{ https://github.com/certafonso }{\texttt{ certafonso }}}
+  \makefield{\faLinkedin}{\href{ https://www.linkedin.com/in/afonsocerto }{\texttt{ afonsocerto }}}
+  \makefield{\faGlobe}{\url{ https://afonsocerto.com }}
+
+  \vspace{0.5em}I'm a PhD student at Técnico and researcher at ISR/LARSyS, working on robot task planning with Large Language Models. I focus on enabling robots to understand and act on natural language commands.}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{profile.JPG}
+\photoscale{0.15}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+\makerubric{education}
+\makerubric{employment}
+\input{publications}
+\makerubric{awards}
+\makerubric{projects}
+\makerubric{activities}
+\makerubric{leadership}
+
+\end{document}

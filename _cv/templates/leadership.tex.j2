@@ -1,0 +1,12 @@
+\begin{rubric}{Leadership \& Community}
+
+{% for item in cv.leadership %}
+\entry*[{{ item.dates | tex_escape }}]
+	\textbf{ {{- item.role | tex_escape -}} }{% if item.organization %}, {{ item.organization | tex_escape }}{% endif %}.
+	{% if item.summary %}
+	\par
+	\small {{ item.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+\end{rubric}

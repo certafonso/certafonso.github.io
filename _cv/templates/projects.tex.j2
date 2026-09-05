@@ -1,0 +1,13 @@
+\begin{rubric}{Research Projects \& Collaborations}
+
+{% for project in cv.projects %}
+\entry*[{{ project.dates | tex_escape }}]
+	\textbf{ {{- project.title | tex_escape }} }{% if project.role %} -- \textit{ {{ project.role | tex_escape }} }{% endif %} \par
+	{% if project.affiliation %}\small {{ project.affiliation | tex_escape }}{% endif %}
+	{% if project.summary %}
+	\par
+	\small {{ project.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+\end{rubric}

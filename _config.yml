@@ -83,6 +83,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  blog:
+    title: 'Technical Articles & Blog Posts'
   under_review:
     title: 'Under Review'
 

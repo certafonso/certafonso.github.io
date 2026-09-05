@@ -1,0 +1,12 @@
+\begin{rubric}{Fellowships, Honors \& Awards}
+
+{% for award in cv.awards %}
+\entry*[{{ award.date | tex_escape }}]
+	\textbf{ {{- award.title | tex_escape -}} }{% if award.issuer %}, {{ award.issuer | tex_escape }}{% endif %}.
+	{% if award.summary %}
+	\par
+	\small {{ award.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+\end{rubric}

@@ -1,0 +1,55 @@
+\begin{rubric}{Academic Activities \& Outreach}
+
+{% if cv.presentations %}
+\subrubric{Talks \& Presentations}
+{% for item in cv.presentations %}
+\entry*[{{ item.date | tex_escape }}]
+	\textbf{ {{- item.title | tex_escape -}}}{%- if item.event -%}, {{ item.event | tex_escape }}{% endif %}{% if item.location %} ({{ item.location | tex_escape -}}){%- endif -%}.
+	{% if item.summary %}
+	\par
+	\small {{ item.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+{% endif %}
+
+{% if cv.supervision %}
+\subrubric{Mentorship \& Supervision}
+{% for item in cv.supervision %}
+\entry*[{{ item.period }}]%
+  \textbf{ {{- item.student | tex_escape }} } ({{ item.degree | tex_escape }}) \par
+  \textit{ {{- item.role | tex_escape }} } -- ``{{ item.topic | tex_escape }}'' \par
+  \small {{ item.institution | tex_escape }}%
+	{% if item.outcome %}
+	\par \footnotesize \textcolor{SwishLineColour}{\faCheckCircle\ {{ item.outcome | tex_escape }} }%
+	{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if cv.competitions %}
+\subrubric{Competitions \& Fieldwork}
+{% for item in cv.competitions %}
+\entry*[{{ item.date | tex_escape }}]
+	\textbf{ {{- item.title | tex_escape -}} }{% if item.event %}, {{ item.event | tex_escape }}{% endif %}{% if item.location %} ({{ item.location | tex_escape }}){% endif %}.
+	{% if item.summary %}
+	\par
+	\small {{ item.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+{% endif %}
+
+{% if cv.outreach %}
+\subrubric{Outreach \& Public Engagement}
+{% for item in cv.outreach %}
+\entry*[{{ item.date | tex_escape }}]
+	\textbf{ {{- item.title | tex_escape }} }{% if item.event %}, {{ item.event | tex_escape }}{% endif %}{% if item.location %} ({{ item.location | tex_escape }}){% endif %}.
+	{% if item.summary %}
+	\par
+	\small {{ item.summary | tex_escape }}
+	{% endif %}
+
+{% endfor %}
+{% endif %}
+
+\end{rubric}

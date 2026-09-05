@@ -15,3 +15,15 @@ package-lock.json
 .vscode/
 .bundle
 vendor
+
+# LaTeX auxiliary and log files
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.bbl
+*.blg
+*.toc
+*.fls
+*.fdb_latexmk

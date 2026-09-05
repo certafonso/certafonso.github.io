@@ -1,112 +1,271 @@
 {
   "basics": {
     "name": "Afonso Bispo Certo",
+    "label": "Ph.D. Student",
     "email": "afonso.certo@tecnico.ulisboa.pt",
     "website": "https://afonsocerto.com",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "summary": "I'm a PhD student at Técnico and researcher at ISR/LARSyS, working on robot task planning with Large Language Models. I focus on enabling robots to understand and act on natural language commands.",
     "location": {
       "city": "Lisboa",
-      "countryCode": "PT"
+      "countryCode": "Portugal"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
         "url": "https://scholar.google.com/citations?user=VyRNn74AAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
         "url": "http://orcid.org/0009-0002-5599-6266"
       },
       {
         "network": "GitHub",
         "username": "certafonso",
         "url": "https://github.com/certafonso"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "afonsocerto",
+        "url": "https://www.linkedin.com/in/afonsocerto"
       }
     ]
   },
-  "work": [
+  "employment": [
     {
       "company": "SocRob@Home",
-      "position": "Team Member",
+      "position": "Team Member & Researcher",
       "startDate": "2022",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "company": "HackerSchool",
-      "position": "Team Member",
-      "startDate": "2019",
-      "endDate": "2023",
-      "summary": "",
-      "highlights": []
+      "endDate": "Present",
+      "summary": "Research on intelligent robotic systems for home environments, focusing on General Purpose Service Robots (GPSR) and natural language command execution.",
+      "highlights": [
+        "Developed a speech pipeline combining Whisper for speech recognition with a rule-based Natural Language Understanding module.",
+        "Implemented a semantic mapping module to manage environmental knowledge.",
+        "Worked on robot task planning using Large Language Models for flexible instruction interpretation.",
+        "Focused Master's thesis on replacing rule-based pipelines with LLM-based planners."
+      ]
     }
   ],
   "education": [
     {
       "institution": "Instituto Superior Técnico",
-      "area": "Ph.D in Electrical and Computer Engineering",
-      "studyType": "",
+      "area": "Ph.D. in Electrical and Computer Engineering",
       "startDate": "2025",
-      "endDate": "Current",
-      "gpa": null,
-      "courses": []
+      "endDate": "Present",
+      "thesisTitle": "Adaptive Planning for Natural Human-Robot Interaction: Real-Time Multimodal Feedback and Hierarchical Goal Reasoning"
     },
     {
       "institution": "Instituto Superior Técnico",
       "area": "M.S. in Electrical and Computer Engineering",
-      "studyType": "",
       "startDate": "2022",
       "endDate": "2024",
-      "gpa": null,
-      "courses": []
+      "thesisTitle": "End-to-End Robot Task Planning from Transcriptions of Voice Commands"
     },
     {
       "institution": "Instituto Superior Técnico",
       "area": "B.S. in Electrical and Computer Engineering",
-      "studyType": "",
       "startDate": "2019",
-      "endDate": "2022",
-      "gpa": null,
-      "courses": []
+      "endDate": "2022"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "category": "Conference Proceedings",
+      "title": "Large Language Model-Based Robot Task Planning from Voice Command Transcriptions",
+      "authors": "A. Certo, B. Martins, C. Azevedo, and P. U. Lima",
+      "publisher": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "releaseDate": "2025",
+      "doi": "10.1109/IROS60139.2025.11246378",
+      "url": "https://afonsocerto.com/files/iros2025_llm_robot_planning.pdf",
+      "summary": "Presents an end-to-end pipeline that leverages a Large Language Model to directly translate instruction transcripts into coherent action plans."
     }
   ],
-  "presentations": [],
-  "teaching": [],
-  "portfolio": []
+  "awards": [
+    {
+      "date": "2025 -- 2029",
+      "title": "FCT Doctoral Studentship (Bolsa de Doutoramento)",
+      "issuer": "Fundação para a Ciência e a Tecnologia",
+      "summary": "Fully funded 4-year individual PhD fellowship for research in LLM-based robot task planning."
+    },
+    {
+      "date": "2024",
+      "title": "Joy in Motion Academic Award",
+      "issuer": "Critical TechWorks / Instituto Superior Técnico",
+      "summary": "Awarded for developing an assistive navigation project supporting blind pedestrians."
+    }
+  ],
+  "projects": [
+    {
+      "dates": "2025 -- 2026",
+      "title": "FOMO-HODOR: Foundation Models for Humanoid Domestic Robots",
+      "role": "Researcher",
+      "affiliation": "FCT / UT Austin Portugal Program (Ref: 10.54499/2024.14126.UTA)",
+      "summary": "Contributing to LLM and foundation model integration for service robotics task planning."
+    },
+    {
+      "dates": "2025",
+      "title": "Oracle OCI Task & Motion Planning Pilot",
+      "role": "Lead Contributor",
+      "affiliation": "Industry Collaboration with Oracle AI & Data Science",
+      "summary": "Developed AI-driven task and motion planning pipelines for domestic service robots using OCI Generative AI tools."
+    }
+  ],
+  "presentations": [
+    {
+      "date": "Oct 2025",
+      "title": "Large Language Model-Based Robot Task Planning from Voice Command Transcriptions",
+      "event": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+      "location": "Hangzhou, China",
+      "summary": "Oral paper presentation."
+    },
+    {
+      "date": "Oct 2025",
+      "title": "Language-Guided Robot Task Planning: From Transcriptions to Context-Aware Actions",
+      "event": "ELLIS Lisbon PhD and Postdoc Symposium",
+      "location": "Lisbon, Portugal",
+      "summary": "Poster and oral presentation."
+    },
+    {
+      "date": "Jul 2025",
+      "title": "Research Pitch",
+      "event": "2025 LARSyS Annual Meeting",
+      "location": "Lisbon, Portugal",
+      "summary": "Pitch presentation on M.Sc. thesis outcomes."
+    }
+  ],
+"competitions": [
+    {
+      "date": "Jul 2026",
+      "title": "RoboCup@Home",
+      "event": "SocRob@Home & Listex@Home Teams",
+      "location": "Incheon, South Korea",
+      "summary": "Benchmarked LLM task planning pipelines with SocRob@Home while providing software integration and field support for the joint Listex@Home humanoid initiative (IST / UT Austin)."
+    },
+    {
+      "date": "Sep 2025",
+      "title": "euROBIN European Parliament Research Showcase",
+      "event": "European Parliament",
+      "location": "Brussels, Belgium",
+      "summary": "Demonstrated cooperative AI and service robotics research outcomes directly to EU policymakers."
+    },
+    {
+      "date": "Nov 2024",
+      "title": "euROBIN Coopetition 2024",
+      "location": "Nancy, France",
+      "summary": "Participated in multi-institutional benchmarking, sharing software publicly to promote collaboration and reproducibility in robotics research."
+    },
+    {
+      "date": "Jul 2024",
+      "title": "RoboCup@Home",
+      "event": "SocRob@Home Team",
+      "location": "Eindhoven, Netherlands",
+      "summary": "Achieved 3rd place overall, testing LLM-based task planning systems in realistic domestic scenarios."
+    },
+    {
+      "date": "May 2024",
+      "title": "RoboCup@Home Portugal Open",
+      "event": "SocRob@Home Team",
+      "location": "Paredes de Coura, Portugal",
+      "summary": "First live deployment and realistic benchmark testing of the LLM-based task planner developed for M.Sc. research."
+    },
+    {
+      "date": "Jul 2023",
+      "title": "RoboCup@Home",
+      "event": "SocRob@Home Team",
+      "location": "Bordeaux, France",
+      "summary": "Achieved 2nd place overall and won the Best GPSR Award, benchmarking autonomous service systems in complex environments."
+    }
+  ],
+  "outreach": [
+    {
+      "date": "Sep 2025",
+      "title": "European Researchers' Night",
+      "event": "Pavilhão do Conhecimento",
+      "location": "Lisbon, Portugal",
+      "summary": "Interactive public demonstrations showcasing humanoid robot capabilities to engage visitors of all ages in science and technology."
+    },
+    {
+      "date": "Jul 2025",
+      "title": "26th Anniversary of Pavilhão do Conhecimento",
+      "event": "Pavilhão do Conhecimento",
+      "location": "Lisbon, Portugal",
+      "summary": "Live interactive demonstrations featuring a humanoid robot as part of the science center's annual anniversary celebration."
+    },
+    {
+      "date": "2024 -- Present",
+      "title": "High School STEM Outreach & Robotics Demos",
+      "event": "Instituto Superior Técnico",
+      "location": "Lisbon, Portugal",
+      "summary": "Hosted interactive live demonstrations on the SocRob@Home testbed for visiting high school students, introducing core concepts in service robotics and perception."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Robotics & AI",
+      "details": "ROS / ROS2, Large Language Models (LLMs), Task Planning, Speech Processing (Whisper), Semantic Mapping"
+    },
+    {
+      "category": "Languages",
+      "details": "Portuguese (Native), English (Fluent)"
+    },
+    {
+      "category": "Programming",
+      "details": "Python, C++, LaTeX, Git"
+    }
+  ],
+"leadership": [
+    {
+      "dates": "2016 -- Present",
+      "role": "Scout Leader & Youth Mentor",
+      "organization": "Associação de Escoteiros de Portugal",
+      "summary": "Led youth groups in outdoor expeditions and community service projects, while mentoring scouts in STEM initiatives including the ESA and Raspberry Pi Foundation 'Mission Zero' program. Spearheaded the digital transition to virtual activities during the COVID-19 pandemic."
+    },
+    {
+      "dates": "2019 -- 2023",
+      "role": "Maker",
+      "organization": "HackerSchool (Instituto Superior Técnico)",
+      "summary": "Developed open-source hardware/software projects, including 'HSTable' (a DIY interactive smart table) and a mechanical physical Turing Machine. Facilitated technical workshops on programming and electronics, and served on the Marketing & Communications team (2021--2022) managing recruitment campaigns and project promotions."
+    }
+  ],
+  "supervision": [
+    {
+      "student": "Pedro Pereira",
+      "period": "2026 -- Present",
+      "degree": "M.Sc. Thesis in Electrical and Computer Engineering",
+      "role": "Co-Supervisor (with Prof. Pedro U. Lima)",
+      "topic": "Active Preference Elicitation and Memory Architectures for LLM-Based Social Humanoid Task Planning",
+      "institution": "Instituto Superior Técnico"
+    },
+    {
+      "student": "António Morais",
+      "period": "2025 -- Present",
+      "degree": "M.Sc. Thesis in Electrical and Computer Engineering",
+      "role": "Technical Advisor (with Prof. Pedro U. Lima & Prof. Bruno Martins)",
+      "topic": "Towards More Natural Human-Robot Interaction Using Full-Duplex Speech Frameworks",
+      "institution": "Instituto Superior Técnico"
+    },
+    {
+      "student": "Diogo Falcão",
+      "period": "2025",
+      "degree": "B.Sc. Capstone Project",
+      "role": "Mentor",
+      "topic": "Enhancing Robotic Perception with Open-Set Object and Human Feature Detection",
+      "institution": "Instituto Superior Técnico"
+    },
+    {
+      "student": "Vítor Fonseca",
+      "period": "2025 -- Present",
+      "degree": "SocRob@Home Team Mentorship",
+      "role": "Team Mentor",
+      "topic": "Object Perception and Automatic Point-Cloud Segmentation for Semantic Mapping",
+      "institution": "Instituto Superior Técnico"
+    },
+    {
+      "student": "Beatriz Pimenta",
+      "period": "2025 -- Present",
+      "degree": "SocRob@Home Team Mentorship",
+      "role": "Team Mentor",
+      "topic": "Speech Pipeline and Skill Implementation for RoboCup",
+      "institution": "Instituto Superior Técnico"
+    }
+  ]
 }

@@ -1,0 +1,10 @@
+\begin{rubric}{Education}
+{% for edu in cv.education -%}
+\entry*[{%- if edu.startDate %}{{ edu.startDate }}{% endif %}{% if edu.startDate and edu.endDate %}--{% endif %}{{ edu.endDate }}]%
+    \textbf{ {{- edu.area | tex_escape -}} }, {{ edu.institution | tex_escape }}.
+    {%- if edu.thesisTitle %}
+    \par Thesis title: \emph{ {{ edu.thesisTitle | tex_escape }} }
+    {%- endif %}
+%
+{% endfor -%}
+\end{rubric}

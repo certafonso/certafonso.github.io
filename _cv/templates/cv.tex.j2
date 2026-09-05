@@ -1,0 +1,78 @@
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+\usepackage{settings}
+
+\DefineBibliographyStrings{english}{url={\textsc{url}}}
+
+\addbibresource{own-bib.bib}
+
+{% set name_parts = cv.basics.name.split() -%}
+{% set first_name = name_parts[0] -%}
+{% set last_name = name_parts[-1] -%}
+%% Bold author name in bibliography
+\mynames{
+  {{ last_name }}/{{ first_name }}}
+
+\ifxetexorluatex
+  \usepackage{fontspec} 
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+% Tell LaTeX where to look for images regardless of execution directory
+\graphicspath { {images/}{../images/} }
+
+\leftheader{
+  {\LARGE\bfseries\sffamily {{ cv.basics.name | tex_escape }}{% if cv.basics.label %}, {{ cv.basics.label | tex_escape }}{% endif %}}
+
+  {% if cv.basics.email %}
+  \makefield{\faEnvelope[regular]}{\href{mailto:{{ cv.basics.email }}}{\texttt{ {{ cv.basics.email | tex_escape }} }}}
+  {% endif %}
+  {% for profile in cv.basics.profiles %}
+    {% if profile.network == "LinkedIn" %}
+  \makefield{\faLinkedin}{\href{ {{ profile.url }} }{\texttt{ {{ profile.username or "LinkedIn" }} }}}
+    {% elif profile.network == "GitHub" %}
+  \makefield{\faGithub}{\href{ {{ profile.url }} }{\texttt{ {{ profile.username or "GitHub" }} }}}
+    {% elif profile.network == "ORCID" %}
+  \makefield{\faOrcid}{\href{ {{ profile.url }} }{\texttt{ {{ profile.username or "ORCID" }} }}}
+    {% elif profile.network == "Google Scholar" %}
+  \makefield{\faGraduationCap}{\href{ {{ profile.url }} }{\texttt{Google Scholar}}}
+    {% endif %}
+  {% endfor %}
+  {% if cv.basics.website %}
+  \makefield{\faGlobe}{\url{ {{ cv.basics.website }} }}
+  {% endif %}
+
+  {% if cv.basics.summary %}
+  \vspace{0.5em}
+  {{- cv.basics.summary | tex_escape -}}
+  {% endif %}
+}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{profile.JPG}
+\photoscale{0.15}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+
+\makerubric{education}
+\makerubric{employment}
+\input{publications}
+\makerubric{awards}
+\makerubric{projects}
+\makerubric{activities}
+\makerubric{leadership}
+
+\end{document}

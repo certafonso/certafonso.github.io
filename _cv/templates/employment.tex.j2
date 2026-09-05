@@ -1,0 +1,10 @@
+\begin{rubric}{Employment History}
+{% for job in cv.employment -%}
+\entry*[{%- if job.startDate %}{{ job.startDate }}{% endif %}{% if job.startDate and job.endDate %}--{% endif %}{% if job.endDate == "Present" or not job.endDate %}Present{% else %}{{ job.endDate }}{% endif -%}]%
+    \textbf{ {{- job.position | tex_escape -}} }{% if job.company %}, {{ job.company | tex_escape }}{% endif %}.{% if job.department %} {{ job.department | tex_escape }}.{% endif %}
+    {%- if job.summary %}
+    {{ job.summary | tex_escape }}
+    {%- endif %}
+%
+{% endfor -%}
+\end{rubric}
