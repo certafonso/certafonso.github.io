@@ -134,18 +134,18 @@
   ],
 "competitions": [
     {
-      "date": "Jul 2026",
-      "title": "RoboCup@Home",
-      "event": "SocRob@Home & Listex@Home Teams",
-      "location": "Incheon, South Korea",
-      "summary": "Benchmarked LLM task planning pipelines with SocRob@Home while providing software integration and field support for the joint Listex@Home humanoid initiative (IST / UT Austin)."
-    },
-    {
       "date": "Sep 2026",
       "title": "euROBIN European Parliament Research Showcase",
       "event": "European Parliament",
       "location": "Brussels, Belgium",
       "summary": "Demonstrated cooperative AI and service robotics research outcomes directly to EU policymakers."
+    },
+    {
+      "date": "Jul 2026",
+      "title": "RoboCup@Home",
+      "event": "SocRob@Home & Listex@Home Teams",
+      "location": "Incheon, South Korea",
+      "summary": "Benchmarked LLM task planning pipelines with SocRob@Home while providing software integration and field support for the joint Listex@Home humanoid initiative (IST / UT Austin)."
     },
     {
       "date": "Nov 2024",

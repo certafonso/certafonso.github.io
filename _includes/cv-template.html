@@ -104,35 +104,42 @@
   {% endif %}
 
   <!-- Publications -->
-  <!-- {% if cv.publications.size > 0 %} -->
+{% if site.publications.size > 0 %}
   <div class="cv-section">
     <h2>Publications</h2>
-    <ul class="cv-list">
-      {% for publication in site.publications reversed %}
-      <li class="cv-item">
-        <div class="cv-item-content">
-          {{ publication.citation }}
-        </div>
-        <!-- <div class="cv-item-header">
-          <div class="cv-item-title">{{ publication.title }}</div>
-          <div class="cv-item-date">{{ publication.date | slice: 0, 4 }}</div>
-        </div>
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ publication.publisher }}</div>
-          {% if publication.summary %}
-          <div class="cv-item-detail">{{ publication.summary }}</div>
-          {% endif %}
-          {% if publication.website %}
-          <div class="cv-item-detail">
-            <a href="{{ publication.paperurl }}" target="_blank">View Publication</a>
-          </div>
-          {% endif %}
-        </div> -->
-      </li>
+
+    {% if site.publication_category %}
+      {% for category in site.publication_category %}
+        {% assign category_key = category[0] %}
+        {% assign category_title = category[1].title %}
+        {% assign category_pubs = site.publications | where: "category", category_key %}
+
+        {% if category_pubs.size > 0 %}
+          <h3>{{ category_title }}</h3>
+          <ul class="cv-list">
+            {% for publication in category_pubs reversed %}
+              <li class="cv-item">
+                <div class="cv-item-content">
+                  {{ publication.citation }}
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       {% endfor %}
-    </ul>
+    {% else %}
+      <ul class="cv-list">
+        {% for publication in site.publications reversed %}
+          <li class="cv-item">
+            <div class="cv-item-content">
+              {{ publication.citation }}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
-  {% endif %}
+{% endif %}
 
   <!-- Fellowships, Honors & Awards -->
   {% if cv.awards.size > 0 %}
